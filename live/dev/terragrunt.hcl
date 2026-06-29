@@ -13,3 +13,7 @@ inputs = {
   storage_account_name = "dbstoragevelovdev"
   container_name       = "medailloncontainer"
 }
+
+dependency "shared" {
+  config_path = "../shared"
+}
