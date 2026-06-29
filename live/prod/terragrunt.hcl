@@ -18,3 +18,7 @@ inputs = {
   storage_account_name = "databricksstoragevelovprod"
   container_name       = "medailloncontainer"
 }
+
+dependency "shared" {
+  config_path = "../shared"
+}
