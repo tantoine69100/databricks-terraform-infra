@@ -15,9 +15,9 @@ inputs = {
   databricks_host = "https://adb-7405610369572793.13.azuredatabricks.net"
 
   workspace_ids = [
-    "7405610369572793",       # dev
-    "<staging-workspace-id>",
-    "<prod-workspace-id>"
+    "7405610369572793", #dev
+    "7405619454210012", #staging 
+    "7405615842563673", #prod
   ]
 
   metastore_storage_account_name = "stmetastorevelov"

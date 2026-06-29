@@ -28,7 +28,7 @@ variable "arm_subscription_id" {
 
 variable "workspace_ids" {
   description = "Liste des IDs des 3 workspaces à attacher au metastore"
-  type        = list(string)
+  type        = list(number)
 }
 
 variable "metastore_storage_account_name" {

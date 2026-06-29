@@ -10,7 +10,7 @@ resource "databricks_metastore" "this" {
 
 # Assignation du metastore aux 3 workspaces (dev, staging, prod) en une seule fois
 resource "databricks_metastore_assignment" "this" {
-  for_each     = toset(var.workspace_ids)
+  for_each     = toset([for id in var.workspace_ids : tostring(id)])
   metastore_id = databricks_metastore.this.id
   workspace_id = each.value
 }
