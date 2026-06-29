@@ -25,4 +25,5 @@ provider "databricks" {
   azure_client_id     = var.arm_client_id
   azure_client_secret = var.arm_client_secret
   azure_tenant_id     = var.arm_tenant_id
+  account_id          = var.databricks_account_id
 }
