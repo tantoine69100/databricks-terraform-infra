@@ -45,8 +45,3 @@ variable "container_name" {
   description = "Nom du container médaillon de l'environnement (output de databricks-platform)"
   type        = string
 }
-
-variable "databricks_account_id" {
-  description = "ID du compte Databricks (visible sur accounts.azuredatabricks.net)"
-  type        = string
-}
